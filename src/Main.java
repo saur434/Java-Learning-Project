@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Main {
+
     public static void main(String[] args) {
 //        Map<Integer,Integer> mp = new HashMap<>();
 //
@@ -72,12 +73,12 @@ public class Main {
 
 //        Queue<Integer>q1 = new LinkedList<>();
 
-        String s1 = "hello";
-        String s2 = "hello";
-        String s3 = new String("hello");
-        String s4 = "xhello";
-        String s5 = s4.substring(1);
-        System.out.println(s5);
+//        String s1 = "hello";
+//        String s2 = "hello";
+//        String s3 = new String("hello");
+//        String s4 = "xhello";
+//        String s5 = s4.substring(1);
+
 //        if(s1==s2)
 //        {
 //            System.out.println("This is pointing to the same memory location");
@@ -90,13 +91,20 @@ public class Main {
 //        {
 //            System.out.println("This is the case in which references are different");
 //        }
-        if(s1==s5)
-        {
-            System.out.println("This is pointing to the same memory location");
-        }
-        else{
-            System.out.println("Pointing to the same content");
-        }
+//        if(s1==s5)
+//        {
+//            System.out.println("This is pointing to the same memory location");
+//        }
+//        else{
+//            System.out.println("Pointing to the same content");
+//        }
+
+
+        Static_Class_Example obj =  new Static_Class_Example();
+        obj.m1();
+        Static_Class_Example.m2();
+        obj.m3(23,5,32,323,234,2323,423,5,2,3,25,2,3,532,2235); // This is the variable argument example
+
 
     }
 
