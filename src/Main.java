@@ -3,13 +3,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class Main {
     public static void main(String[] args) {
-        Map<Integer,Integer> mp = new HashMap<>();
-
-        mp.put(2,3);
-        mp.put(4,2);
-        mp.put(null,null);
-
-        int n = mp.size();
+//        Map<Integer,Integer> mp = new HashMap<>();
+//
+//        mp.put(2,3);
+//        mp.put(4,2);
+//        mp.put(null,null);
+//
+//        int n = mp.size();
 //        mp.forEach((Integer val,Integer val2) ->
 //                System.out.println(val));
 //           for(Map.Entry<Integer,Integer>entry:mp.entrySet())
@@ -18,33 +18,33 @@ public class Main {
 //               System.out.println(entry.getValue());
 //               System.out.println(entry.getClass());
 //           }
-        Map<Integer,String>linkedHashMap = new LinkedHashMap<>();
-            linkedHashMap.put(2,"JJ");
-        linkedHashMap.put(5,"JJ");
-        linkedHashMap.put(3,"JJ");
-        linkedHashMap.put(4,"JJ");
-        linkedHashMap.put(null,"JJ");
-        linkedHashMap.put(null,null);
-
-        linkedHashMap.computeIfAbsent(2, k -> "uikj");
-        linkedHashMap.computeIfPresent(2, (k, v) -> "new");
+//        Map<Integer,String>linkedHashMap = new LinkedHashMap<>();
+//            linkedHashMap.put(2,"JJ");
+//        linkedHashMap.put(5,"JJ");
+//        linkedHashMap.put(3,"JJ");
+//        linkedHashMap.put(4,"JJ");
+//        linkedHashMap.put(null,"JJ");
+//        linkedHashMap.put(null,null);
+//
+//        linkedHashMap.computeIfAbsent(2, k -> "uikj");
+//        linkedHashMap.computeIfPresent(2, (k, v) -> "new");
 
 //        linkedHashMap.forEach((Integer key, String val) ->
 //                System.out.println(key + " " + val)
 //        );
 
-        Map<Integer,Integer>hashtable = new Hashtable<>();
-        hashtable.put(2,3);
-        hashtable.put(5,3);
+//        Map<Integer,Integer>hashtable = new Hashtable<>();
+//        hashtable.put(2,3);
+//        hashtable.put(5,3);
 
 //        hashtable.forEach((Integer key, Integer val) ->
 //                System.out.println(key + " " + val)
 //        );
 
-        Map<Integer,String>treemap = new TreeMap<>((Integer val1,Integer val2) -> val2-val1);
-        treemap.put(2,"SA");
-        treemap.put(1,"SA");
-        treemap.put(3,"SA");
+//        Map<Integer,String>treemap = new TreeMap<>((Integer val1,Integer val2) -> val2-val1);
+//        treemap.put(2,"SA");
+//        treemap.put(1,"SA");
+//        treemap.put(3,"SA");
 
 //        treemap.forEach((Integer key, String val) ->
 //                System.out.println(key + " " + val)
@@ -70,9 +70,33 @@ public class Main {
 //        Set<Integer>threadsafe = connmap.newKeySet();
 
 
-        Queue<Integer>q1 = new LinkedList<>();
+//        Queue<Integer>q1 = new LinkedList<>();
 
-
+        String s1 = "hello";
+        String s2 = "hello";
+        String s3 = new String("hello");
+        String s4 = "xhello";
+        String s5 = s4.substring(1);
+        System.out.println(s5);
+//        if(s1==s2)
+//        {
+//            System.out.println("This is pointing to the same memory location");
+//        }
+//        if(s1.equals(s2))
+//        {
+//            System.out.println("Pointing to the same content");
+//        }
+//        if(s1==s3)
+//        {
+//            System.out.println("This is the case in which references are different");
+//        }
+        if(s1==s5)
+        {
+            System.out.println("This is pointing to the same memory location");
+        }
+        else{
+            System.out.println("Pointing to the same content");
+        }
 
     }
 
