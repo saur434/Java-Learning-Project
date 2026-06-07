@@ -105,14 +105,25 @@ public class Main {
 //        Static_Class_Example.m2();
 //        obj.m3(23,5,32,323,234,2323,423,5,2,3,25,2,3,532,2235); // This is the variable argument example
 
-        Child_Class childClass = new Child_Class();
-        childClass.m1();
+//        Child_Class childClass = new Child_Class();
+//        childClass.m1();
+//
+//        Child_Class c1 = new Child_Class();
+//        c1 = null;
+//        System.gc();
+//        System.out.println("GC REQUESTED");
 
-        Child_Class c1 = new Child_Class();
-        c1 = null;
-        System.gc();
-        System.out.println("GC REQUESTED");
+        // If I want to implement the method in the abstract class then , basically I have to create the subclass that extends
+        // it, and then I have to implement the method as I can't create the object of it but with the help of the anonymous class we
+        // can do it without even creating the subclass as compiler automatically creates the subclass at backend and name is decided by compiler itself.
 
+        Abstract_Class abstractClass = new Abstract_Class() {
+            @Override
+            public void applybreak() {
+                System.out.println("This is the apply break method");
+            }
+        };
+        abstractClass.applybreak();
     }
 
 
