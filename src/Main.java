@@ -107,7 +107,13 @@ public class Main {
 
         Child_Class childClass = new Child_Class();
         childClass.m1();
+
+        Child_Class c1 = new Child_Class();
+        c1 = null;
+        System.gc();
+        System.out.println("GC REQUESTED");
+
     }
 
-   
+
 }
