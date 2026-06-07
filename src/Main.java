@@ -100,12 +100,13 @@ public class Main {
 //        }
 
 
-        Static_Class_Example obj =  new Static_Class_Example();
-        obj.m1();
-        Static_Class_Example.m2();
-        obj.m3(23,5,32,323,234,2323,423,5,2,3,25,2,3,532,2235); // This is the variable argument example
+//        Static_Class_Example obj =  new Static_Class_Example();
+//        obj.m1();
+//        Static_Class_Example.m2();
+//        obj.m3(23,5,32,323,234,2323,423,5,2,3,25,2,3,532,2235); // This is the variable argument example
 
-
+        Child_Class childClass = new Child_Class();
+        childClass.m1();
     }
 
    
