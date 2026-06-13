@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public enum Enumeration {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
 
-public class Enumeration {
 }

@@ -125,10 +125,34 @@ public class Main {
 //        };
 //        abstractClass.applybreak();
         // Generic class Calling method
-        Generic_Class<Integer> genericClass = new Generic_Class<>();
-        genericClass.setValue(2);
-        System.out.println(genericClass.getData());
+//        Generic_Class<Integer> genericClass = new Generic_Class<>();
+//        genericClass.setValue(2);
+//        System.out.println(genericClass.getData());
+//
+//       for(Enumeration enumeration:Enumeration.values())
+//       {
+//           System.out.println(enumeration.ordinal());
+//           System.out.println(enumeration.name());
+//       }
+//
+//       Enumeration enumvar = Enumeration.valueOf("Monday");
+//       System.out.println(enumvar);
+       // To invoke the EnumCustom Values
+//        for(EnumCustomValues enumeration:EnumCustomValues.values())
+//        {
+//            System.out.println(enumeration.i);
+//            System.out.println(enumeration.s);
+//        }
 
+
+        EnumMethodOverride enumMethodOverride  = EnumMethodOverride.Monday;
+
+        enumMethodOverride.dummymethod();
+    // Enum Abstract method call
+        EnumAbstractMethod enumAbstractMethod = EnumAbstractMethod.MONDAY;
+        enumAbstractMethod.message();
+        enumAbstractMethod.Enumimplementinterface();
+        //Enum we used because of readablitly purpose only
     }
 
 
