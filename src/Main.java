@@ -117,13 +117,18 @@ public class Main {
         // it, and then I have to implement the method as I can't create the object of it but with the help of the anonymous class we
         // can do it without even creating the subclass as compiler automatically creates the subclass at backend and name is decided by compiler itself.
 
-        Abstract_Class abstractClass = new Abstract_Class() {
-            @Override
-            public void applybreak() {
-                System.out.println("This is the apply break method");
-            }
-        };
-        abstractClass.applybreak();
+//        Abstract_Class abstractClass = new Abstract_Class() {
+//            @Override
+//            public void applybreak() {
+//                System.out.println("This is the apply break method");
+//            }
+//        };
+//        abstractClass.applybreak();
+        // Generic class Calling method
+        Generic_Class<Integer> genericClass = new Generic_Class<>();
+        genericClass.setValue(2);
+        System.out.println(genericClass.getData());
+
     }
 
 
